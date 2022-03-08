@@ -1,0 +1,27 @@
+{
+  "name": "connect-platform-website",
+  "version": "1.0.0",
+  "description": "CONNECT platform website",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.13.1",
+    "nodemon": "^2.0.2"
+  },
+  "scripts": {
+    "build-css": "node-sass --include-path scss scss/main.scss css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "build-css-prod": "node-sass --include-path scss scss/main.scss css/main.prod.css --output-style compressed",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CONNECT-platform/connect-platform-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CONNECT-platform/connect-platform-website/issues"
+  },
+  "homepage": "https://github.com/CONNECT-platform/connect-platform-website#readme"
+}

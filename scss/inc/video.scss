@@ -1,0 +1,110 @@
+.video-wrapper {
+	position: fixed;
+  top: calc(25vh - 14.2625vw);
+  left: 0;
+	right: 0;
+	width: 100vw;
+	padding-bottom: 56.25vw; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+  overflow: hidden;
+  background: #212121;
+  opacity: 0;
+	cursor: pointer;
+  z-index: -1;
+}
+
+body.mobile .video-wrapper,
+body.tablet .video-wrapper {
+	position: relative;
+	opacity: 1;
+	margin: -24px;
+	margin-bottom: 0;
+	top: auto;
+	padding-top: 0;
+	z-index: 1;
+}
+
+body.mobile .video-section,
+body.tablet .video-section {
+	display: block;
+	padding-top: 0;
+	margin-top: 0;
+	min-height: auto;
+}
+
+.video-wrapper img {
+	opacity: 0;
+	transition: opacity .15s, box-shadow .15s;
+}
+
+.video-wrapper.loaded img {
+	opacity: 1;
+}
+
+.video-wrapper.active img {
+	opacity: 0;
+}
+
+.video-wrapper img.thumbnail {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.video-wrapper img.button  {
+	position: absolute;
+	width: 96px;
+	height: 96px;
+	border-radius: 96px;
+	top: 50%;
+	margin-top: -48px;
+	left: 50%;
+	margin-left: -48px;
+}
+
+.video-wrapper.loaded:not(.active) img.button:hover {
+	opacity: 1;
+	box-shadow: 0 0 32px white;
+}
+
+.video-wrapper.loaded:not(.active) img.button {
+	opacity: .85;
+	box-shadow: 0 0 0px white;
+}
+
+.video-wrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: opacity .3s;
+}
+
+.video-wrapper.loaded iframe {
+	opacity: 1;
+}
+
+.video-wrapper .loading {
+  position: absolute;
+  top: 50%; left: 0; right: 0;
+  padding-top: 48px;
+  color: #bdbdbd;
+  animation: video-loading 3s infinite;
+  background-image: url('../gif/loading.gif');
+  background-size: 48px;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+@keyframes video-loading {
+  0% { opacity: 0.5 }
+  50% { opacity: 1 }
+  100% { opacity: 0.5 }
+}

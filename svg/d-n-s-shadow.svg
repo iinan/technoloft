@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="446px" height="100px" viewBox="0 0 446 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M64,180 L56,180 C56,177.790861 54.209139,176 52,176 C49.790861,176 48,177.790861 48,180 L40,180 C40,177.790861 38.209139,176 36,176 C33.790861,176 32,177.790861 32,180 L24,180 C24,177.790861 22.209139,176 20,176 C17.790861,176 16,177.790861 16,180 C7.163444,180 0,172.836556 0,164 L0,100 C0,91.163444 7.163444,84 16,84 L176,84 C184.836556,84 192,91.163444 192,100 L192,164 C192,172.836556 184.836556,180 176,180 L72,180 C72,177.790861 70.209139,176 68,176 C65.790861,176 64,177.790861 64,180 Z" id="path-1"></path>
+        <filter x="-1.6%" y="-3.1%" width="103.1%" height="106.2%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <path d="M0,116 L0,180 C0,188.836556 7.163444,196 16,196 L176,196 C184.836556,196 192,188.836556 192,180 L192,116 C192,107.163444 184.836556,100 176,100 L16,100 C7.163444,100 0,107.163444 0,116 Z" id="path-3"></path>
+        <filter x="-1.6%" y="-3.1%" width="103.1%" height="106.3%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="1" opacity="0.25">
+        <g id="fourth-page" transform="translate(-497.000000, -324.000000)" fill="black">
+            <g id="shape" transform="translate(499.000000, 226.000000)">
+                <g id="Group" transform="translate(0.000000, 16.000000)">
+                    <g id="shadow">
+                        <use filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    </g>
+                </g>
+                <g id="Group" transform="translate(250.000000, 0.000000)">
+                    <g id="Combined-Shape">
+                        <use filter="url(#filter-4)" xlink:href="#path-3"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

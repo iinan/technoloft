@@ -1,0 +1,256 @@
+.page-loading {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: white;
+  z-index: 10000;
+  opacity: 1;
+  background-image: url('svg/carbon.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80vh;
+  transition: opacity .3s;
+}
+
+body.mostly-loaded .page-loading {
+  opacity: 0;
+}
+
+body.loaded .page-loading {
+  display: none;
+}
+
+.page-loading img {
+  width: 128px;
+  transform-origin: center 69px;
+  margin-bottom: 32px;
+  animation: loading-logo 2s infinite;
+}
+
+@keyframes loading-logo {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(720deg); }
+}
+
+img.logo-carved {
+  position: fixed;
+  padding: 0;
+  margin: 0;
+  bottom: 512px;
+  width: 240px;
+  left: 50vw;
+  margin-left: -120px;
+  z-index: 1;
+  will-change: transform;
+  will-change: opacity;
+
+  transform-origin: center;
+}
+
+body.xxl img.logo-carved {
+  bottom: calc(342px + 25vh);
+}
+
+img.hero {
+  max-height: calc(100vh - 512px);
+}
+
+img.hero.medium {
+  max-height: calc(90vh - 512px);
+}
+
+body.mobile img.hero,
+body.tablet img.hero {
+  margin-top: 10vh;
+  max-height: none;
+  max-width: 80vw;
+}
+
+body.mobile-landscape img.hero {
+  max-width: 50vw;
+}
+
+img.hero.logo {
+  width: 35vmin;
+}
+
+.backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+  z-index: -1;
+  will-change: transform;
+}
+
+.backdrop .circle {
+  width: 150vmax;
+  height: 150vmax;
+  border-radius: 75vmax;
+  background: #424242;
+  position: absolute;
+  left: 50vw;
+  top: 50vh;
+  margin-left: -75vmax;
+  margin-top: -75vmax;
+  opacity: 0;
+  transform: scale(0);
+  will-change: transform;
+  will-change: opacity;
+}
+
+.scroll {
+  position: relative;
+  height: 42px;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.scroll img {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  margin-left: -8px;
+  animation: scroll 2s infinite;
+}
+
+.privacy img.logo-carved {
+  position: initial;
+  display: block;
+  margin:50px auto;
+  left: 0;
+}
+
+section.privacy a:hover::after {
+  transform: scaleX(0);
+}
+
+section.privacy {
+  text-align: left;
+}
+
+section.privacy h1, section.privacy h2 {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+@keyframes scroll {
+  0% { transform: translateY(0); }
+  75% { transform: translateY(16px); }
+  80% { transform: translateY(0); }
+}
+
+.d-n-s-hero {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 32px;
+  will-change: opacity;
+}
+
+.d-n-s-hero .laptop {
+  position: absolute;
+  bottom: 12px;
+  right: 0px;
+  will-change: transform;
+}
+
+.d-n-s-hero .server {
+  position: absolute;
+  bottom: 12px;
+  left: 0px;
+  will-change: transform;
+}
+
+.gdpr-popup {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  padding: 10px 20px;
+
+  width: 30%;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  z-index: 20;
+
+  transform: scale(0.75);
+  transform-origin: bottom left;
+}
+
+.gdpr-popup.hide {
+  display: none;
+}
+
+.gdpr-popup .button {
+  margin-top: 10px;
+  height: 30px;
+  margin-right: 0;
+}
+
+.gdpr-buttons {
+  text-align: right;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+ .gdpr-popup {
+    width: 100%;
+  }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+  .gdpr-popup.responsive {
+    width: 40%;
+  }
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+/* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+}

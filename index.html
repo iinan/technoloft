@@ -1,0 +1,506 @@
+<!doctype html>
+<head>
+  <title>Technoloft - Making It POSsible</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+  <meta name="subject" content='Serverless Graphical Backend Development Tool'/>
+  <meta name="robots" content='index,follow'/>
+  <meta name="description" content='Blazing-fast cloud-native visual programming, same low-level control of traditional coding, and seamless cloud deployments. Embrace the future of web development.'/>
+  <meta name="keywords" content="serverless, server-less, visual, seamless, focused, intuitive, fast, efficient, backend, web, API, service, microservice, micro-service, micro service, programming, code, coding, develop, development, deploy, deployment, server, scale, scaling, async, asynchronous, integration, software, SaaS, cloud"/>
+  
+  <link rel="shortcut icon" href="favicon.ico"/>
+
+  <script src="https://unpkg.com/gleit@1.0.1"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+
+  <link href="css/main.css" rel="stylesheet">
+
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+  <script src="js/video.js"></script>
+  <script src="js/responsive.js"></script>
+
+  <script>
+    !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0";
+    analytics.load("HuayxcqKtvYHrO3QRzymdj7xbx2lPQHf");
+    analytics.page();
+    }}();
+  </script>
+  <!-- Start of Async Drift Code -->
+  <script>
+  "use strict";
+
+  !function() {
+    var t = window.driftt = window.drift = window.driftt || [];
+    if (!t.init) {
+      if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+      t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+      t.factory = function(e) {
+        return function() {
+          var n = Array.prototype.slice.call(arguments);
+          return n.unshift(e), t.push(n), t;
+        };
+      }, t.methods.forEach(function(e) {
+        t[e] = t.factory(e);
+      }), t.load = function(t) {
+        var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+        o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+        var i = document.getElementsByTagName("script")[0];
+        i.parentNode.insertBefore(o, i);
+      };
+    }
+  }();
+  drift.SNIPPET_VERSION = '0.3.1';
+  drift.load('#');
+  </script>
+  <!-- End of Async Drift Code -->
+</head>
+<body class="main-page">
+  <div class="page-loading">
+    <div>
+      <img src="svg/loading.svg"/>
+      <p>loading awesome stuff ...</p>
+    </div>
+  </div>
+  <div class="backdrop desktop-only" data-gleit='{
+    "310vh": {"translateX": "0vw"},
+    "350vh": {"translateX": "50vw"},
+    "440vh": {"translateX": "50vw"},
+    "480vh": {"translateX": "0vw"}
+  }'>
+    <div class="circle" data-gleit='{
+      "0vh": {"opacity": 0},
+      "65vh": {"scale": 0},
+      "80vh": {"scale": 1, "opacity": 1},
+      "600vh": {"scale": 1},
+      "630": {"opacity": 1},
+      "660vh": {"scale": 0, "opacity": 0}
+    }'></div>
+  </div>
+
+  <section>
+    <img class="logo-carved desktop-only"  src="svg/logo.svg" data-gleit='{
+      "0vh": {"scale": 1},
+      "78vh": {"opacity": 1, "scale": 5},
+      "80vh": {"opacity": 0 }
+    }'/>
+    <div>
+      <img class="hero logo no-desktop" src="svg/logo.svg"/>
+      <div class="spacer no-desktop"></div>
+      <h1>Topnotch Solutions for POS System</h1>
+      <h2>[for growth-minded businesses]</h2>
+      <p>
+        <b>Technoloft</b> offers you to create tailored end to end POS systems that 
+		will make your business processers leaner, faster & more efficient,
+        without compromising the control you would get with traditional operation.
+        Become faster, less error-prone and more focused.
+      </p>
+      <br>
+      <div class="scroll desktop-only"><img class="line" src="svg/scroll.svg"/></div>
+      <br>
+      <a class="button" href="#" target="_blank">Get A Quote</a>
+    </div>
+  </section>
+
+  <section class="dark video-section" data-gleit='{
+    "75vh": {"opacity": 0},
+    "85vh": {"opacity": 1}
+  }'>
+    <div>
+      <div id="video1" class="video-wrapper" data-gleit='{
+        "84vh": {"translateX": "100vw"},
+        "85vh": {"opacity": 0, "translateX": "0vw"},
+        "90vh": {"opacity": 1},
+        "120vh": {"opacity": 1},
+        "140vh": {"opacity": 0}
+      }'>
+        <div class="loading">loading the video ...</div>
+        <div id="video1-frame"></div>
+        <img class="thumbnail" src="png/video1-thumbnail.png"/>
+        <img class="button" src="svg/play-video.svg"/>
+      </div>
+      <br>
+      <h3>Check How A Restaurant is Running with Technoloft's System</h3>
+      <br class="mobile-portrait-only">
+      <p class="small mobile-portrait-only">please rotate your screen for watching the video.</p>
+      <br>
+      <div class="scroll desktop-only"><img class="line" src="svg/scroll.svg"/></div>
+    </div>
+  </section>
+
+  <section class="dark video-section">
+    <div>
+      <div id="video2" class="video-wrapper" data-gleit='{
+        "159vw": {"translateX": "100vw"},
+        "160vh": {"opacity": 0, "translateX": "0vw"},
+        "170vh": {"opacity": 1},
+        "220vh": {"opacity": 1},
+        "240vh": {"opacity": 0}
+      }'>
+        <div class="loading">loading the video ...</div>
+        <div id="video2-frame"></div>
+        <img class="thumbnail" src="png/video2-thumbnail.png"/>
+        <img class="button" src="svg/play-video.svg"/>
+      </div>
+      <br>
+      <h3>Introducing Prokriyon- Our Centralized Sales and Distribution Management</h3>
+      <br class="mobile-portrait-only">
+      <p class="small mobile-portrait-only">please rotate your screen for watching the video.</p>
+      <br>
+      <div class="scroll desktop-only"><img class="line" src="svg/scroll.svg"/></div>
+    </div>
+  </section>
+
+  <section class="dark video-section">
+    <div>
+      <div id="video3" class="video-wrapper" data-gleit='{
+        "259vh": {"translateX": "100vw"},
+        "260vh": {"opacity": 0, "translateX": "0vw"},
+        "270vh": {"opacity": 1},
+        "310vh": {"opacity": 1},
+        "320vh": {"opacity": 0}
+      }'>
+        <div class="loading">loading the video ...</div>
+        <div id="video3-frame"></div>
+        <img class="thumbnail" src="png/video3-thumbnail.png"/>
+        <img class="button" src="svg/play-video.svg"/>
+      </div>
+      <br>
+      <h3 data-gleit='{"310vh": {"opacity": 1}, "330vh": {"opacity": 0}}'>All the modules of our system</h3>
+      <br class="mobile-portrait-only">
+      <p class="small mobile-portrait-only">please rotate your screen for watching the video.</p>
+      <br>
+      <div class="scroll desktop-only" data-gleit='{"310vh": {"opacity": 1}, "335vh": {"opacity": 0}}'><img class="line" src="svg/scroll.svg"/></div>
+    </div>
+  </section>
+
+  <section class="desktop-only">
+    <div>
+      <div class="connector"></div>
+      <div class="half left">
+        <h1>Industries We Serve</h1>
+        <br>
+        <p>
+          Our services are predominantly focused towards B2C such as Retail and Hospitality Industry.
+		  However, we have ventured into B2B as well, starting with catering towards RMG sector. 
+        </p>
+        <br><br>
+        <img class="medium" src="png/text-code.png" data-gleit='{
+          "350vh": {"opacity": 0, "scale": 0.85},
+          "390vh": {"opacity": 1}
+        }'/>
+      </div>
+      <div class="half right dark">
+        <h1>Services We Provide</h1>
+        <br>
+        <p>
+          Since we would like to offer the best of our expertise, besides providing our ready to use flagship products
+		  we also extend our services in system customization, training and new product development.
+        </p>
+        <br><br>
+        <img class="medium" src="png/visual-code.png" data-gleit='{
+          "350vh": {"opacity": 0, "scale": 0.85},
+          "390vh": {"opacity": 1}
+        }'/>
+      </div>
+      <br>
+      <a class="button" href="https://medium.com/connect-platform/the-problem-of-async-programming-and-a-crazy-idea-for-solving-it-cf368a9ea949" target="_blank">Learn More</a>
+    </div>
+  </section>
+
+  <section class="dark">
+    <div>
+      <div class="d-n-s-hero desktop-only" data-gleit='{
+        "460vh": {"opacity": 0, "scale": 0.8},
+        "480vh": {"opacity": 1}
+      }'>
+        <img src="png/d-n-s-shadows.png"/>
+        <img class="laptop" src="png/laptop.png" data-gleit='{
+          "460vh": {"translateY": "-156px"},
+          "500vh": {"translateY": "0px"}
+        }'/>
+        <img class="server" src="png/server.png" data-gleit='{
+          "460vh": {"translateY": "-96px"},
+          "500vh": {"translateY": "0px"}
+        }'/>
+      </div>
+      <img class="hero medium no-desktop" src="png/d-n-s.png"/>
+      <br><div class="spacer"></div><br>
+      <h1>Deploy & Scale Seamlessly</h1>
+      <br>
+      <p>
+        Our robust platform allows you to focus on the logic of your business while
+        Technoloft takes care of the rest.
+      </p>
+      <p class="small">
+         OR, use our cloud based solution to deploy anywhere from managed servers
+         to your laptop or use our boiler-plate project to create your own
+         tailored projects. 
+      </p>
+      <div class="spacer"></div>
+      <a class="button" href="https://deskfront.connect-platform.com/" target="_blank">Book appointment</a>
+    </div>
+  </section>
+
+  <section class="dark">
+    <div>
+      <div class="wide close half left">
+        <div class="code" data-gleit='{
+          "570vh": {"opacity": 0},
+          "590vh": {"opacity": 1}
+        }'>
+          <pre><code class="javascript" id="code">//
+// get the platform
+//
+const platform = require('connect-platform');
+
+//
+// add a node that outputs hellow to some dude
+//
+platform.node(
+
+  //
+  // so first the signature of the node.
+  //
+  {
+    path: '/my-package/hellow',
+    public: false,
+    inputs: ['dude'],
+    outputs: ['message'],
+  },
+
+  //
+  // then the functionality.
+  //
+  (inputs, output) => {
+    output('message', `hellow ${inputs.dude}!`);
+  }
+);</code></pre>
+        </div>
+      </div>
+      <div class="spacer no-desktop"></div>
+      <div class="wide close half right">
+        <h1>The Limit is Your Imagination</h1>
+        <br>
+        <p class="fade">
+          Switch to Technoloft at any point you find your existing system not enough to drive
+          your growth, as our solutions are based on ever-expandable <b>Dotnet platform</b>.
+        </p>
+        <p class="fade">
+          Use any number of modules on your system, or easily create your own tailored package
+          using our <a href="#" target="_blank">package boilerplate project</a>.
+        </p>
+        <p class="fade">
+          With this level of flexibility and technical freedom, we can practically build any
+          logical microservice bundle consisting only the modules your business requires, 
+		  in a fraction of the time. This is not just hyperbole: that is how
+          <b>we built our Software as a Service (SaaS) utilizing flexible coding.</b>
+        </p>
+      </div>
+      <br><div class="spacer"></div><br>
+
+      <a class="button" href="#" target="_blank">Learn More</a>
+    </div>
+  </section>
+
+  <section>
+    <div>
+      <img class="hero medium" src="png/interconnect.png" data-gleit='{"660vh": {"opacity": 0}, "700vh": {"opacity": 1}}'/>
+      <br><div class="spacer"></div>
+      <h1>Inter-connect Your Departments</h1>
+      <br>
+      <p>
+        Utilizing functionality of our API based modules, we provide
+        real time data exchange among your business departments.
+        Technoloft makes inter-connecting your units consistently effortless.
+      </p>
+      <p class="small">
+        Interconnectivity is not limited to systems built by Technoloft.
+        Any remote service complying with the INTERCONNECTIBILITY API spec
+        can be easily integrated into our platform.
+      </p>
+      <br><br>
+      <a class="button" href="#" target="_blank">Learn More</a>
+    </div>
+  </section>
+
+  <section>
+    <div>
+      <img class="hero" src="png/map.png" title="built in Dhaka, Bangladesh"/>
+      <br><br>
+      <h1>Interested? Lets Have a Chat!</h1>
+      <br>
+      <p>
+        Join our Discord server, send us a message on Twitter,
+        connect with our Facebook page,
+        or simply drop us an email on info@technoloft.net
+      </p>
+      <br><div class="spacer"></div><br>
+      <div>
+        <a class="button secondary" href="#" target="_blank">Join Discord</a>
+        <a class="button secondary desktop-only" href="#" target="_blank">Follow on FB</a>
+        <br class="mobile-portrait-only">
+        <br class="mobile-portrait-only">
+        <a class="button secondary" href="#" target="_blank">Read More</a>
+      </div>
+      </br></br></br>
+      <div>
+        Reach us at: </br>
+        Technoloft </br>
+        16/21 Tajmahal Road, 2nd Floor,</br>
+        Mohammadpur, Dhaka-1207 </br>
+  
+        E-Mail: info@technoloft.net | Call: +88 01712 111881, +88 01841 800595 </br>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="footer">
+    <div class="texts">
+      <div class="link desktop-only"><a href="#" target="_blank">Who are we</a></div>
+      <div class="separator desktop-only"></div>
+      <div class="link no-mobile"><a href="#" target="_blank">What we do</a></div>
+      <div class="separator no-mobile"></div>
+      <div class="link no-mobile"><a href="#" target="_blank">Where to reach</a></div>
+      <div class="separator desktop-only"></div>
+    </div>
+    <div class="icons">
+      <a href="https://discord.gg/WfdyDBe" target="_blank">
+        <img src="png/logo.png"/>
+      </a>
+    </div>
+  </div>
+
+  <div class="gdpr-popup responsive" id="gdpr">
+    To improve your user experience, this website uses cookies. We assume that you agree, but of course you have the option of opt-out.<div class="gdpr-buttons"><a href="privacy.html" target="_blank">Details</a><a class="button secondary" id="gdpr-button">Accept</a></div>
+  </div>
+
+  <script>
+    //
+    // ---------- TODO: REMOVE THIS ----------
+    //
+    function animateCode() {
+      var el = document.getElementById('code');
+      var code = el.textContent;
+      var lines = code.split('\n');
+      var typed = "";
+      var waited = 0;
+      var wait = 0;
+
+      function animate() {
+        if (wait > waited) {
+          waited += 1;
+          return;
+        }
+
+        waited = 0;
+
+        if (typed.length >= code.length) {
+          if (wait == 100) {
+            wait = 0;
+            typed = "";
+          }
+          else wait = 100;
+        }
+        else {
+          var char = code[typed.length];
+          typed += char;
+
+          if (char == '\n') {
+            var ch = ' ';
+            while (true) {
+              ch = code[typed.length];
+              if (ch == ' ') typed += ch;
+              else break;
+            }
+
+            wait = Math.floor(Math.random() * Math.random() * 14) + 2;
+          }
+          else {
+            if (char == ' ' || char == '(' || char == ')' || char == ':'
+                || char == '=' || char == '{' || char == '}' || char == '.'
+                || char == ',' || char == '[' || char == ']')
+              wait = Math.floor(Math.random() * Math.random() * Math.random() * 16);
+            else
+              wait = Math.floor(Math.random() * Math.random() * Math.random() * 4);
+          }
+        }
+
+        el.innerHTML = typed + "<span class='cursor'></span>";
+
+        var typedLines = typed.split('\n').length;
+        for (var line = typedLines; line <= lines.length; line++)
+          el.innerHTML += '\n';
+        hljs.highlightBlock(el);
+      }
+
+      setInterval(animate, 35);
+    }
+    //
+    // ---------- END OF REMOVABLE SECTION ----------
+    //
+
+    function onload() {
+      var body = document.querySelector('body');
+
+      //
+      // disable the pre-loader when everything is done.
+      // however, we want people to get a glimpse of the nice pre-loader
+      // because otherwise it looks buggy. so add a timeout.
+      //
+      setTimeout(function() {
+        //
+        // well the preloader needs to be faded out, so
+        // lets let its animation finish before we mark the
+        // document as completely loaded.
+        //
+        body.classList.add('mostly-loaded');
+        setTimeout(function(){ body.classList.add('loaded'); }, 300);
+      }, 500);
+
+      //
+      // and also if we are on desktop,
+      // lets run the gleit animations.
+      //
+      if (body.classList.contains('desktop')) {
+        gleit.animate().on(gleit.verticalScroll());
+      }
+
+      //
+      // yeah the code animation works on any device.
+      //
+      animateCode();
+    }
+
+    //
+    // mount the on
+    //
+    if (window.addEventListener) window.addEventListener('load', onload);
+    else if (window.attachEvent) window.attachEvent('onload', onload);
+
+    var gdprPopup = document.getElementById("gdpr");
+    var gdprPopupButton = document.getElementById("gdpr-button");
+    gdprPopupButton.addEventListener("click", function() {
+      gdprPopup.classList.add("hide");
+      localStorage.setItem('hideGdpr', true);
+    })
+
+    if(localStorage.getItem('hideGdpr')) {
+      gdprPopup.classList.add("hide");
+    }
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- NOT NEEDED BECAUSE OF SEGMENT <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140731888-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-140731888-1');
+  </script>-->
+
+</body>

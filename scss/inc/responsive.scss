@@ -1,0 +1,106 @@
+.--responsive-marker { display: none; }
+.--responsive-marker::before { display: none; }
+
+/*
+  ##Device = Desktops
+  ##Screen = 1801px to higher resolutions
+*/
+@media (min-width: 1801px) {
+  .no-xxl, .no-desktop , .laptop-only,
+  .tablet-only, .tablet-portrait-only, .tablet-landscape-only,
+  .mobile-only, .mobile-portrait-only, .mobile-landscape-only {
+    display: none !important;
+  }
+
+  .--responsive-marker::before { content: "desktop, xxl"; }
+}
+
+/*
+  ##Device = Desktops
+  ##Screen = B/w 1441px to 1800px
+*/
+
+@media (min-width: 1441px) and (max-width: 1800px) {
+  .xxl-only, .no-desktop , .laptop-only,
+  .tablet-only, .tablet-portrait-only, .tablet-landscape-only,
+  .mobile-only, .mobile-portrait-only, .mobile-landscape-only {
+    display: none !important;
+  }
+
+  .--responsive-marker::before { content: "desktop"; }
+}
+
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .xxl-only, .no-desktop , .no-laptop,
+  .tablet-only, .tablet-portrait-only, .tablet-landscape-only,
+  .mobile-only, .mobile-portrait-only, .mobile-landscape-only {
+    display: none !important;
+  }
+
+  .--responsive-marker::before { content: "desktop, laptop"; }
+}
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .xxl-only, .desktop-only , .laptop-only,
+  .no-tablet, .no-tablet-portrait, .tablet-landscape-only,
+  .mobile-only, .mobile-portrait-only, .mobile-landscape-only {
+    display: none !important;
+  }
+
+  .--responsive-marker::before { content: "tablet, tablet-portrait"; }
+}
+
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .xxl-only, .desktop-only , .laptop-only,
+  .no-tablet, .tablet-portrait-only, .no-tablet-landscape,
+  .mobile-only, .mobile-portrait-only, .mobile-landscape-only {
+    display: none !important;
+  }
+
+  .--responsive-marker::before { content: "tablet, tablet-landscape"; }
+}
+
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .xxl-only, .desktop-only , .laptop-only,
+  .no-tablet, .no-tablet-portrait, .tablet-landscape-only,
+  .no-mobile, .mobile-portrait-only, .no-mobile-landscape {
+    display: none !important;
+  }
+
+  .--responsive-marker::before { content: "tablet, tablet-portrait, mobile, mobile-landscape"; }
+}
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .xxl-only, .desktop-only , .laptop-only,
+  .tablet-only, .tablet-portrait-only, .tablet-landscape-only,
+  .no-mobile, .no-mobile-portrait, .mobile-landscape-only {
+    display: none !important;
+  }
+
+  .--responsive-marker::before { content: "mobile, mobile-portrait"; }
+}
