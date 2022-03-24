@@ -1,2 +1,2 @@
-# connect-platform-website
-the website for CONNECT platform
+# website
+the website for Technoloft
