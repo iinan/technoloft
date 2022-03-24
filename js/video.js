@@ -1,9 +1,9 @@
 'use strict';
 
 var videoIds = {
-  video1: 'TXK6lAfOrh8',
-  video2: 'WejfGJjIYs8',
-  video3: 'TXK6lAfOrh8'
+  video1: 'CoQVX9hAUk4',
+  video2: 'bV5CmOfR450',
+  video3: 'qu8sXPkBtnk'
 }
 
 function loadYouTubeIframeAPI() {
