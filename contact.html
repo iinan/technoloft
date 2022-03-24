@@ -1,0 +1,224 @@
+<!doctype html>
+<head>
+  <title>Technoloft - Making It POSsible</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+  <meta name="subject" content='Serverless Graphical Backend Development Tool'/>
+  <meta name="robots" content='index,follow'/>
+  <meta name="description" content='Blazing-fast cloud-native POS solutions for the growth of your business. Embrace the future of web development.'/>
+  <meta name="keywords" content="serverless, server-less, visual, seamless, focused, intuitive, fast, efficient, backend, web, API, service, microservice, micro-service, micro service, programming, code, coding, develop, development, deploy, deployment, server, scale, scaling, async, asynchronous, integration, software, SaaS, cloud"/>
+  
+  <link rel="shortcut icon" href="favicon.ico"/>
+
+  <script src="https://unpkg.com/gleit@1.0.1"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/form.css" rel="stylesheet">
+
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+  <script src="js/video.js"></script>
+  <script src="js/responsive.js"></script>
+
+  <script>
+    !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0";
+    analytics.load("HuayxcqKtvYHrO3QRzymdj7xbx2lPQHf");
+    analytics.page();
+    }}();
+  </script>
+  <!-- Start of Async Drift Code -->
+  <script>
+  "use strict";
+
+  !function() {
+    var t = window.driftt = window.drift = window.driftt || [];
+    if (!t.init) {
+      if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+      t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+      t.factory = function(e) {
+        return function() {
+          var n = Array.prototype.slice.call(arguments);
+          return n.unshift(e), t.push(n), t;
+        };
+      }, t.methods.forEach(function(e) {
+        t[e] = t.factory(e);
+      }), t.load = function(t) {
+        var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+        o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+        var i = document.getElementsByTagName("script")[0];
+        i.parentNode.insertBefore(o, i);
+      };
+    }
+  }();
+  drift.SNIPPET_VERSION = '0.3.1';
+  drift.load('#');
+  </script>
+  <!-- End of Async Drift Code -->
+</head>
+
+  <section>
+    
+      <img class="hero logo no-desktop" src="svg/logo.svg"/>
+      <div class="spacer no-desktop"></div>
+	  <header>Send A Message</header>
+      <form id="form" class="topBefore">
+		
+		  <input id="name" type="text" placeholder="NAME">
+		  <input id="email" type="text" placeholder="E-MAIL">
+		  <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
+  <input id="submit" type="submit" value="GO!">
+  
+</form>
+    </div>
+  </section>
+
+ 
+  <div class="footer">
+    <div class="texts">
+      <div class="link desktop-only"><a href="#" target="_blank">Who are we</a></div>
+      <div class="separator desktop-only"></div>
+      <div class="link no-mobile"><a href="#" target="_blank">What we do</a></div>
+      <div class="separator no-mobile"></div>
+      <div class="link no-mobile"><a href="#" target="_blank">Where to reach</a></div>
+      <div class="separator desktop-only"></div>
+    </div>
+    <div class="icons">
+      <a href="https://discord.gg/WfdyDBe" target="_blank">
+        <img src="png/logo.png"/>
+      </a>
+    </div>
+  </div>
+
+  <div class="gdpr-popup responsive" id="gdpr">
+    To improve your user experience, this website uses cookies. We assume that you agree, but of course you have the option of opt-out.<div class="gdpr-buttons"><a href="privacy.html" target="_blank">Details</a><a class="button secondary" id="gdpr-button">Accept</a></div>
+  </div>
+
+  <script>
+    //
+    // ---------- TODO: REMOVE THIS ----------
+    //
+    function animateCode() {
+      var el = document.getElementById('code');
+      var code = el.textContent;
+      var lines = code.split('\n');
+      var typed = "";
+      var waited = 0;
+      var wait = 0;
+
+      function animate() {
+        if (wait > waited) {
+          waited += 1;
+          return;
+        }
+
+        waited = 0;
+
+        if (typed.length >= code.length) {
+          if (wait == 100) {
+            wait = 0;
+            typed = "";
+          }
+          else wait = 100;
+        }
+        else {
+          var char = code[typed.length];
+          typed += char;
+
+          if (char == '\n') {
+            var ch = ' ';
+            while (true) {
+              ch = code[typed.length];
+              if (ch == ' ') typed += ch;
+              else break;
+            }
+
+            wait = Math.floor(Math.random() * Math.random() * 14) + 2;
+          }
+          else {
+            if (char == ' ' || char == '(' || char == ')' || char == ':'
+                || char == '=' || char == '{' || char == '}' || char == '.'
+                || char == ',' || char == '[' || char == ']')
+              wait = Math.floor(Math.random() * Math.random() * Math.random() * 16);
+            else
+              wait = Math.floor(Math.random() * Math.random() * Math.random() * 4);
+          }
+        }
+
+        el.innerHTML = typed + "<span class='cursor'></span>";
+
+        var typedLines = typed.split('\n').length;
+        for (var line = typedLines; line <= lines.length; line++)
+          el.innerHTML += '\n';
+        hljs.highlightBlock(el);
+      }
+
+      setInterval(animate, 35);
+    }
+    //
+    // ---------- END OF REMOVABLE SECTION ----------
+    //
+
+    function onload() {
+      var body = document.querySelector('body');
+
+      //
+      // disable the pre-loader when everything is done.
+      // however, we want people to get a glimpse of the nice pre-loader
+      // because otherwise it looks buggy. so add a timeout.
+      //
+      setTimeout(function() {
+        //
+        // well the preloader needs to be faded out, so
+        // lets let its animation finish before we mark the
+        // document as completely loaded.
+        //
+        body.classList.add('mostly-loaded');
+        setTimeout(function(){ body.classList.add('loaded'); }, 300);
+      }, 500);
+
+      //
+      // and also if we are on desktop,
+      // lets run the gleit animations.
+      //
+      if (body.classList.contains('desktop')) {
+        gleit.animate().on(gleit.verticalScroll());
+      }
+
+      //
+      // yeah the code animation works on any device.
+      //
+      animateCode();
+    }
+
+    //
+    // mount the on
+    //
+    if (window.addEventListener) window.addEventListener('load', onload);
+    else if (window.attachEvent) window.attachEvent('onload', onload);
+
+    var gdprPopup = document.getElementById("gdpr");
+    var gdprPopupButton = document.getElementById("gdpr-button");
+    gdprPopupButton.addEventListener("click", function() {
+      gdprPopup.classList.add("hide");
+      localStorage.setItem('hideGdpr', true);
+    })
+
+    if(localStorage.getItem('hideGdpr')) {
+      gdprPopup.classList.add("hide");
+    }
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- NOT NEEDED BECAUSE OF SEGMENT <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140731888-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-140731888-1');
+  </script>-->
+
+</body>
